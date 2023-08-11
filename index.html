@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <header class="row">
+      <div id="header">
+        <h1>나의 작은 도서관</h1>
+      </div>
+    </header>
+
+    <nav class="row">
+      <div id="nav-bar">
+        <div id="search">
+          <form action="#">
+            <input
+              class="input-box"
+              type="text"
+              placeholder="책 이름으로 검색해주세요."
+            />
+            <input class="input-button" type="button" value="검색" />
+          </form>
+        </div>
+        <div id="add">
+          <form action="#">
+            <input class="input-button" type="button" value="추가" />
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <article class="row">
+      <div id="contents">
+        <ul class="content-items"></ul>
+      </div>
+    </article>
+
+    <div class="modal">
+      <div class="modal__content">
+        <h1>I'm a modal</h1>
+        <p></p>
+      </div>
+    </div>
+
+    <footer></footer>
+    <div class="darkmode"></div>
+  </body>
+</html>

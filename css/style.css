@@ -187,3 +187,8 @@ button {
   color: rgb(238, 238, 238);
   font-size: 25px;
 }
+
+.error .error-page-button {
+  position: relative;
+  top: 40px;
+}

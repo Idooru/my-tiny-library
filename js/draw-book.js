@@ -30,8 +30,9 @@ export const drawBook = () => {
     const imgItems = document.querySelectorAll(".img-box");
     const darkmodeEle = document.querySelector(".darkmode");
     const modalEle = document.querySelector(".modal");
-    const modalContentTitle = document.querySelector(".modal__content h1");
-    const modalContentContent = document.querySelector(".modal__content p");
+    const modalContentEle = document.querySelector(".modal__content");
+    const modalContentTitle = document.createElement("h1");
+    const modalContentContent = document.createElement("p");
 
     imgItems.forEach((imgItem) => {
       imgItem.onclick = function () {
@@ -44,6 +45,9 @@ export const drawBook = () => {
 
         darkmodeEle.style.display = "block";
         modalEle.style.display = "block";
+
+        modalContentEle.appendChild(modalContentTitle);
+        modalContentEle.appendChild(modalContentContent);
       };
     });
   });

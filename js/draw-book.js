@@ -19,8 +19,8 @@ export const drawBook = () => {
             <p class="price">가격: ${book.price}</p>
           </div>
           <div class="buttons">
-            <button>수정</button>
-            <button>삭제</button>
+            <button class="modify-button">수정</button>
+            <button class="delete-button">삭제</button>
           </div>
         </div>
     `;

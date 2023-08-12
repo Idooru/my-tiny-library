@@ -9,7 +9,7 @@
   padding: 50px;
 }
 
-.modal__content {
+.modal-box {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 19), 0 6px 6px rgba(0, 0, 0, 0.23);
   background-color: white;
   width: 800px;
@@ -17,10 +17,25 @@
   text-align: center;
 }
 
-.modal__content h1 {
+.modal-box h1 {
   padding-top: 20px;
+  height: 80px;
+  border-radius: 10px 10px 0 0;
+  background-color: rgb(187, 233, 233);
 }
 
-.modal__content p {
+.modal-box #content {
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   line-height: 1.5em;
+}
+
+.modal-box #guide-line {
+  height: 60px;
+  display: flex;
+  background-color: rgb(137, 211, 189);
+  font-weight: bold;
+  color: orangered;
 }

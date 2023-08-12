@@ -106,7 +106,7 @@ button {
   margin: 20px 0;
   background-color: whitesmoke;
   width: 350px;
-  height: 450px;
+  height: 460px;
   position: relative;
   padding-top: 15px;
   border-radius: 10px;
@@ -186,9 +186,4 @@ button {
 .error p {
   color: rgb(238, 238, 238);
   font-size: 25px;
-}
-
-.error .modify-button {
-  position: relative;
-  top: 40px;
 }

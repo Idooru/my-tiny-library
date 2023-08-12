@@ -1,4 +1,6 @@
-export default [
+import { error } from "./error.js";
+
+const bookList = [
   {
     subject: "엄마의 책갈피 인문학",
     author: "김선호",
@@ -39,7 +41,7 @@ export default [
     photo: "book4.jpg",
   },
   {
-    subject: "행정법총론 기출문제집 세트(2021)(써니)(전2권)",
+    subject: "행정법총론 기출문제집",
     author: "박준철",
     publisher: "에스티유니타스",
     date: "2020년 10월 26일",
@@ -98,3 +100,11 @@ export default [
     photo: "book10.jpg",
   },
 ];
+
+bookList.forEach((book) => {
+  if (book.subject.length > 25) {
+    error("over flow length");
+  }
+});
+
+export default bookList;

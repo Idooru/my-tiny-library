@@ -1,0 +1,41 @@
+#contents .content-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#contents .book {
+  list-style: none;
+  justify-content: space-between;
+  margin: 20px 0;
+  background-color: whitesmoke;
+  width: 350px;
+  height: 460px;
+  position: relative;
+  padding-top: 15px;
+  border-radius: 10px;
+  font-size: 13px;
+  text-align: center;
+  box-shadow: 3px 3px 3px gray;
+}
+
+#contents .book .img-box img {
+  border: 1.5px solid black;
+  box-shadow: 3px 3px 3px black;
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
+#contents .book .desc {
+  margin-top: 20px;
+  padding-top: 5px;
+  line-height: 1.5em;
+  height: 105px;
+  color: rgb(37, 41, 0);
+  background-color: rgb(252, 208, 215);
+}
+
+#contents .book .buttons {
+  margin: 10px 0;
+}

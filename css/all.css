@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: beige;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  margin: 6px 4px;
+  border: none;
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.modify-button {
+  background-color: rgb(71, 221, 221);
+  color: rgb(41, 79, 80);
+}
+
+.delete-button {
+  background-color: red;
+  color: rgb(82, 18, 18);
+}
+
+.darkmode {
+  z-index: 500;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.row {
+  max-width: 1150px;
+  margin: 0 auto;
+}

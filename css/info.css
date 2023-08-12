@@ -1,0 +1,7 @@
+#info {
+  display: flex;
+  background-color: bisque;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+}

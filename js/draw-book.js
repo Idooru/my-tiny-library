@@ -31,9 +31,10 @@ export const drawBook = () => {
     const imgItems = document.querySelectorAll(".img-box");
     const darkmodeEle = document.querySelector(".darkmode");
     const modalEle = document.querySelector(".modal");
-    const modalContentEle = document.querySelector(".modal__content");
-    const modalContentTitle = document.createElement("h1");
-    const modalContentContent = document.createElement("p");
+    const modalBoxEle = document.querySelector(".modal-box");
+    const modalBoxTitle = document.createElement("h1");
+    const modalBoxContent = document.createElement("p");
+    const modalBoxGuideLine = document.createElement("p");
 
     imgItems.forEach((imgItem) => {
       imgItem.onclick = function () {
@@ -41,14 +42,21 @@ export const drawBook = () => {
           this.nextElementSibling.firstElementChild.textContent.substring(4);
         const bookFound = books.find((book) => book.subject === titleTarget);
 
-        modalContentTitle.innerText = bookFound.subject;
-        modalContentContent.innerText = bookFound.summary;
+        modalBoxTitle.innerText = bookFound.subject;
+        modalBoxContent.innerText = bookFound.summary;
+        modalBoxGuideLine.innerText = "창을 누르시면 창이 닫히게 됩니다!";
+
+        modalBoxContent.id = "content";
+        modalBoxGuideLine.id = "guide-line";
+        modalBoxContent.className = "flex-sort";
+        modalBoxGuideLine.className = "flex-sort";
 
         darkmodeEle.style.display = "block";
         modalEle.style.display = "block";
 
-        modalContentEle.appendChild(modalContentTitle);
-        modalContentEle.appendChild(modalContentContent);
+        modalBoxEle.appendChild(modalBoxTitle);
+        modalBoxEle.appendChild(modalBoxContent);
+        modalBoxEle.appendChild(modalBoxGuideLine);
       };
     });
   });

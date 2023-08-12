@@ -85,10 +85,10 @@ li {
 #contents .book {
   list-style: none;
   justify-content: space-between;
-  margin: 15px 0;
+  margin: 20px 0;
   background-color: whitesmoke;
   width: 350px;
-  height: 430px;
+  height: 450px;
   position: relative;
   padding-top: 15px;
   border-radius: 10px;
@@ -106,10 +106,16 @@ li {
 }
 
 #contents .book .desc {
-  margin-top: 10px;
+  margin-top: 20px;
   padding-top: 5px;
   line-height: 1.5em;
-  color: rgb(56, 50, 50);
+  height: 105px;
+  color: rgb(37, 41, 0);
+  background-color: rgb(252, 208, 215);
+}
+
+#contents .book .buttons {
+  margin-top: 7px;
 }
 
 #contents .book .buttons button {

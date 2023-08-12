@@ -1,4 +1,5 @@
 import books from "./booklist.js";
+import { info } from "./info.js";
 
 export const drawBook = () => {
   const contentItems = document.querySelector(".content-items");
@@ -7,7 +8,7 @@ export const drawBook = () => {
     const liEle = document.createElement("li");
 
     liEle.innerHTML = `
-        <div class="book">
+        <div class="book border-rounder">
           <div class="img-box">
             <img src="./images/${book.photo}" />
           </div>
@@ -46,9 +47,13 @@ export const drawBook = () => {
         darkmodeEle.style.display = "block";
         modalEle.style.display = "block";
 
+        // modalContentEle.className = "border-rounder";
+
         modalContentEle.appendChild(modalContentTitle);
         modalContentEle.appendChild(modalContentContent);
       };
     });
   });
+
+  info("책의 이미지를 클릭하면 책의 요약을 볼 수 있습니다!");
 };

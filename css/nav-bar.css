@@ -6,7 +6,6 @@
   margin: 10px 0;
   background-color: rgb(182, 162, 133);
   padding: 10px;
-  border-radius: 10px;
 }
 
 #nav-bar form {
@@ -18,7 +17,6 @@
 }
 
 #nav-bar #search .input-box {
-  border-radius: 5px;
   width: 350px;
   height: 25px;
   border-style: none;
@@ -37,5 +35,4 @@
   cursor: pointer;
   text-align: center;
   background-color: rgb(151, 139, 101);
-  border-radius: 5px;
 }

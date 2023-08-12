@@ -45,3 +45,7 @@ button {
   max-width: 1150px;
   margin: 0 auto;
 }
+
+.border-rounder {
+  border-radius: 10px;
+}

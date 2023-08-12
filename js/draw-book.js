@@ -47,8 +47,6 @@ export const drawBook = () => {
         darkmodeEle.style.display = "block";
         modalEle.style.display = "block";
 
-        // modalContentEle.className = "border-rounder";
-
         modalContentEle.appendChild(modalContentTitle);
         modalContentEle.appendChild(modalContentContent);
       };

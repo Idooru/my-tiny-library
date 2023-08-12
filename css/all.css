@@ -49,3 +49,9 @@ button {
 .border-rounder {
   border-radius: 10px;
 }
+
+.flex-sort {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

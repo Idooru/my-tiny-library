@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <cssFileTag>
+      <link rel="stylesheet" href="./css/all.css" />
+      <link rel="stylesheet" href="./css/header.css" />
+      <link rel="stylesheet" href="./css/nav-bar.css" />
+      <link rel="stylesheet" href="./css/info.css" />
+      <link rel="stylesheet" href="./css/error.css" />
+    </cssFileTag>
+    <script defer type="module" src="./js/draw-error.js"></script>
+  </head>
+  <body>
+    <header class="row">
+      <div id="header" class="border-rounder">
+        <h1>나의 작은 도서관</h1>
+      </div>
+    </header>
+
+    <nav class="row">
+      <div id="nav-bar" class="border-rounder">
+        <div id="search">
+          <form action="#">
+            <input
+              class="input-box border-rounder"
+              type="text"
+              placeholder="책 이름으로 검색해주세요."
+            />
+            <input
+              class="input-button border-rounder"
+              type="button"
+              value="검색"
+            />
+          </form>
+        </div>
+        <div id="add">
+          <form action="#">
+            <input
+              class="input-button border-rounder"
+              type="button"
+              value="추가"
+            />
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <article class="row">
+      <div id="info" class="border-rounder"></div>
+      <div id="error" class="border-rounder">
+        <div class="error border-rounder">
+          <h2>서비스에 문제가 발생하였습니다</h2>
+        </div>
+      </div>
+    </article>
+
+    <div class="modal">
+      <div class="modal__content border-rounder"></div>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

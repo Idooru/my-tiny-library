@@ -1,10 +1,14 @@
-import { bookList } from "./booklist.js";
 import { drawInfo } from "./drawa-info.js";
+import { bookList } from "../../data/booklist.js";
+import { errorEvent } from "../events/error-event.js";
 
-export const drawBook = () => {
-  const contentItems = document.querySelector(".content-items");
+export const drawSearch = () => {
+  const [[, searchItem]] = new URLSearchParams(window.location.search);
 
-  bookList.forEach((book) => {
+  const book = bookList.find((book) => book.subject === searchItem);
+
+  if (book) {
+    const contentItems = document.querySelector(".content-items");
     const liEle = document.createElement("li");
 
     liEle.innerHTML = `
@@ -59,7 +63,8 @@ export const drawBook = () => {
         modalBoxEle.appendChild(modalBoxGuideLine);
       };
     });
-  });
-
-  drawInfo("책의 이미지를 클릭하면 책의 요약을 볼 수 있습니다!");
+    drawInfo(`${book.subject}(으)로 검색된 결과를 가져옵니다!`);
+  } else {
+    errorEvent("not found name");
+  }
 };

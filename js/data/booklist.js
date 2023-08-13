@@ -1,4 +1,4 @@
-import { error } from "./error.js";
+import { errorEvent } from "../functions/events/error-event.js";
 
 const bookList = [
   {
@@ -103,7 +103,7 @@ const bookList = [
 
 bookList.forEach((book) => {
   if (book.subject.length > 25) {
-    error("over flow length");
+    errorEvent("over flow length");
   }
 });
 

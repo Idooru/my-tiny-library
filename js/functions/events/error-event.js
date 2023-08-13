@@ -1,4 +1,4 @@
-export const error = (errorCase) => {
+export const errorEvent = (errorCase) => {
   const redirectUrl = "../error.html?error-content-message";
   let contentMessage;
   let buttonMessage;

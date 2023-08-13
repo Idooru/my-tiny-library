@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나의 작은 도서관</title>
+    <cssFileTag>
+      <link rel="stylesheet" href="./css/all.css" />
+      <link rel="stylesheet" href="./css/header.css" />
+      <link rel="stylesheet" href="./css/nav-bar.css" />
+      <link rel="stylesheet" href="./css/info.css" />
+      <link rel="stylesheet" href="./css/contents.css" />
+      <link rel="stylesheet" href="./css/modal.css" />
+    </cssFileTag>
+    <script defer type="module" src="./js/search-page-init.js"></script>
+  </head>
+  <body>
+    <header class="row">
+      <div id="header" class="border-rounder">
+        <h1>나의 작은 도서관</h1>
+      </div>
+    </header>
+
+    <nav class="row">
+      <div id="nav-bar" class="border-rounder flex-sort">
+        <div id="search">
+          <form action="#" id="search-form">
+            <input
+              class="input-box border-rounder"
+              type="search"
+              placeholder="책 이름으로 검색해주세요."
+            />
+            <input
+              class="input-button border-rounder"
+              type="submit"
+              value="검색"
+            />
+          </form>
+        </div>
+        <div id="add">
+          <form action="#">
+            <input
+              class="input-button border-rounder"
+              type="button"
+              value="추가"
+            />
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <article class="row">
+      <div id="info" class="border-rounder flex-sort"></div>
+      <div id="contents">
+        <ul class="content-items"></ul>
+      </div>
+    </article>
+
+    <div class="modal">
+      <div class="modal-box border-rounder"></div>
+    </div>
+
+    <footer></footer>
+    <div class="darkmode"></div>
+  </body>
+</html>

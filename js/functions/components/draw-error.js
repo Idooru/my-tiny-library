@@ -1,4 +1,4 @@
-import { drawInfo } from "./drawa-info.js";
+import { drawInfo } from "./draw-info.js";
 
 const drawError = () => {
   const [[, contentMessage], [, buttonMessage]] = new URLSearchParams(

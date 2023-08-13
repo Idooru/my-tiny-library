@@ -1,4 +1,4 @@
-import { drawInfo } from "./drawa-info.js";
+import { drawInfo } from "../components/draw-info.js";
 import { bookList } from "../../data/booklist.js";
 import { errorEvent } from "../events/error-event.js";
 

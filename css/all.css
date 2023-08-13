@@ -20,6 +20,11 @@ button {
   border-radius: 10px;
 }
 
+.title-style {
+  color: inherit;
+  text-decoration: none;
+}
+
 .modify-button {
   background-color: rgb(71, 221, 221);
   color: rgb(41, 79, 80);

@@ -107,4 +107,4 @@ bookList.forEach((book) => {
   }
 });
 
-export default bookList;
+export { bookList };

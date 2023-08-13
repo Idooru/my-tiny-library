@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나의 작은 도서관</title>
+    <cssFileTag>
+      <link rel="stylesheet" href="./css/all.css" />
+      <link rel="stylesheet" href="./css/header.css" />
+      <link rel="stylesheet" href="./css/nav-bar.css" />
+      <link rel="stylesheet" href="./css/info.css" />
+      <link rel="stylesheet" href="./css/add.css" />
+    </cssFileTag>
+    <script
+      defer
+      type="module"
+      src="./js/functions/home/add-page-init.js"
+    ></script>
+  </head>
+  <body>
+    <header class="row">
+      <div id="header" class="border-rounder">
+        <h1><a class="title-style" href="/">나의 작은 도서관</a></h1>
+      </div>
+    </header>
+
+    <nav class="row">
+      <div id="nav-bar" class="border-rounder flex-sort">
+        <div id="search">
+          <form action="#" id="search-form">
+            <input
+              class="input-box border-rounder"
+              type="search"
+              placeholder="책 이름으로 검색해주세요."
+            />
+            <input
+              id="search-button"
+              class="input-button border-rounder"
+              type="submit"
+              value="검색"
+            />
+          </form>
+        </div>
+        <div id="add">
+          <form action="#">
+            <input
+              id="add-button"
+              class="input-button border-rounder"
+              type="button"
+              value="추가"
+            />
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <article class="row">
+      <div id="info" class="border-rounder flex-sort"></div>
+      <div id="contents" class="border-rounder">
+        <div id="title" class="flex-sort">
+          <h2>책 추가하기</h2>
+        </div>
+        <div id="input-box" class="flex-sort">
+          <form>
+            <table>
+              <tr>
+                <td class="key">제목</td>
+                <td class="value">
+                  <input
+                    type="text"
+                    name="book-title"
+                    placeholder="25글자 미만"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td class="key">작가</td>
+                <td class="value">
+                  <input type="text" name="book-author" />
+                </td>
+              </tr>
+              <tr>
+                <td class="key">출판사</td>
+                <td class="value">
+                  <input type="text" name="book-author" />
+                </td>
+              </tr>
+              <tr>
+                <td class="key">출판일</td>
+                <td class="value">
+                  <input type="date" />
+                </td>
+              </tr>
+              <tr>
+                <td class="key">가격</td>
+                <td class="value">
+                  <input type="number" />
+                </td>
+              </tr>
+              <tr>
+                <td class="key">소개</td>
+                <td class="value">
+                  <textarea></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td class="key">사진</td>
+                <td class="value">
+                  <label for="file">
+                    <div id="photo-upload">Photo</div>
+                  </label>
+                  <input type="file" name="file" id="file" />
+                </td>
+              </tr>
+            </table>
+            <div id="submit-buttons" class="flex-sort">
+              <button type="submit">전송</button>
+              <button type="reset">취소</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </article>
+  </body>
+</html>

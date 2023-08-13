@@ -1,6 +1,6 @@
 import { drawInfo } from "./draw-info.js";
 
-const drawError = () => {
+export const drawError = () => {
   const [[, contentMessage], [, buttonMessage]] = new URLSearchParams(
     window.location.search
   );
@@ -17,5 +17,3 @@ const drawError = () => {
 
   drawInfo("에러가 발생하였습니다.");
 };
-
-drawError();

@@ -1,5 +1,5 @@
 import { bookList } from "../../data/booklist.js";
-import { drawInfo } from "./drawa-info.js";
+import { drawInfo } from "./draw-info.js";
 
 export const drawBook = () => {
   const contentItems = document.querySelector(".content-items");

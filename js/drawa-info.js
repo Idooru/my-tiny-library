@@ -1,4 +1,4 @@
-export const info = (message) => {
+export const drawInfo = (message) => {
   const infoEle = document.querySelector("#info");
   const infoContent = document.createElement("p");
 

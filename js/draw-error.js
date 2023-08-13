@@ -1,4 +1,4 @@
-import { info } from "./info.js";
+import { drawInfo } from "./drawa-info.js";
 
 const drawError = () => {
   const [[, contentMessage], [, buttonMessage]] = new URLSearchParams(
@@ -15,7 +15,7 @@ const drawError = () => {
   errorEle.appendChild(errorContentEle);
   errorEle.appendChild(errorButtonEle);
 
-  info("에러가 발생하였습니다.");
+  drawInfo("에러가 발생하였습니다.");
 };
 
 drawError();

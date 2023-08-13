@@ -1,5 +1,5 @@
 import books from "./booklist.js";
-import { info } from "./info.js";
+import { drawInfo } from "./drawa-info.js";
 
 export const drawBook = () => {
   const contentItems = document.querySelector(".content-items");
@@ -61,5 +61,5 @@ export const drawBook = () => {
     });
   });
 
-  info("책의 이미지를 클릭하면 책의 요약을 볼 수 있습니다!");
+  drawInfo("책의 이미지를 클릭하면 책의 요약을 볼 수 있습니다!");
 };

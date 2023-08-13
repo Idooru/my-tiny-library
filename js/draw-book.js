@@ -1,10 +1,10 @@
-import books from "./booklist.js";
+import { bookList } from "./booklist.js";
 import { drawInfo } from "./drawa-info.js";
 
 export const drawBook = () => {
   const contentItems = document.querySelector(".content-items");
 
-  books.forEach((book) => {
+  bookList.forEach((book) => {
     const liEle = document.createElement("li");
 
     liEle.innerHTML = `
@@ -40,7 +40,7 @@ export const drawBook = () => {
       imgItem.onclick = function () {
         const titleTarget =
           this.nextElementSibling.firstElementChild.textContent.substring(4);
-        const bookFound = books.find((book) => book.subject === titleTarget);
+        const bookFound = bookList.find((book) => book.subject === titleTarget);
 
         modalBoxTitle.innerText = bookFound.subject;
         modalBoxContent.innerText = bookFound.summary;

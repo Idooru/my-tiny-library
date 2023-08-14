@@ -60,13 +60,14 @@
         <div id="title" class="flex-sort">
           <h2>책 추가하기</h2>
         </div>
-        <div id="input-box" class="flex-sort">
+        <div id="input-box">
           <form>
             <table>
               <tr>
                 <td class="key">제목</td>
                 <td class="value">
                   <input
+                    id="book-title"
                     type="text"
                     name="book-title"
                     maxlength="25"
@@ -77,40 +78,44 @@
               <tr>
                 <td class="key">작가</td>
                 <td class="value">
-                  <input type="text" name="book-author" />
+                  <input id="book-author" type="text" name="book-author" />
                 </td>
               </tr>
               <tr>
                 <td class="key">출판사</td>
                 <td class="value">
-                  <input type="text" name="book-author" />
+                  <input
+                    id="book-publisher"
+                    type="text"
+                    name="book-publisher"
+                  />
                 </td>
               </tr>
               <tr>
                 <td class="key">출판일</td>
                 <td class="value">
-                  <input type="date" />
+                  <input id="book-date" type="date" name="book-date" />
                 </td>
               </tr>
               <tr>
                 <td class="key">가격</td>
                 <td class="value">
-                  <input type="number" />
+                  <input id="book-price" type="number" name="book-price" />
                 </td>
               </tr>
               <tr>
                 <td class="key">소개</td>
                 <td class="value">
-                  <textarea></textarea>
+                  <input id="book-summary" type="text" name="book-summary" />
                 </td>
               </tr>
               <tr>
                 <td class="key">사진</td>
                 <td class="value">
-                  <label for="file">
+                  <label for="book-photo">
                     <div id="photo-upload">Photo</div>
                   </label>
-                  <input type="file" name="file" id="file" />
+                  <input id="book-photo" type="file" name="book-photo" />
                 </td>
               </tr>
             </table>

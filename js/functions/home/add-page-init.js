@@ -1,4 +1,4 @@
-import { addPageFunctions } from "../../data/add-page-function.js";
+import { addPageFunctions } from "../../data/add-page-functions.js";
 
 const addPageInit = () => {
   addPageFunctions.forEach((item) => item());

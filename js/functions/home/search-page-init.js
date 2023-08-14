@@ -1,4 +1,4 @@
-import { searchPagefunctions } from "../../data/search-page-function.js";
+import { searchPagefunctions } from "../../data/search-page-functions.js";
 
 const searchPageInit = () => {
   searchPagefunctions.forEach((item) => item());

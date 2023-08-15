@@ -5,3 +5,5 @@ const mainPageInit = () => {
 };
 
 mainPageInit();
+
+// test 주석
